@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - BudgetBee 🐝</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fffbea;
+            font-family: "Poppins", sans-serif;
+        }
+        .card {
+            border: 2px solid #ffcc00;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ffcc00;
+            font-weight: bold;
+            text-shadow: 1px 1px black;
+        }
+        .btn-bee {
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+        }
+        .btn-bee:hover {
+            background-color: black;
+            color: #ffcc00;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: black;
+            color: #ffcc00;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card p-4 text-center">
+                <h2>🐝 Prediction Result</h2>
+                <p><b>Description:</b> {{ description }}</p>
+                <p><b>Amount:</b> ₹{{ amount }}</p>
+                <p><b>Predicted Category:</b> 
+                    <span class="badge bg-warning text-dark">{{ category }}</span>
+                </p>
+                <a href="/" class="btn btn-bee mt-3">Go Back</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Buzzing your budget smartly 🐝</p>
+    </footer>
+</body>
+</html>
